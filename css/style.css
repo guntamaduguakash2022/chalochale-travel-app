@@ -1,11 +1,16 @@
-.row > .col {
+.destination-grid > [class*="col-"] {
 	display: flex;
 }
 
-.row > .col > .card {
+.destination-grid > [class*="col-"] > .card {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
+	height: 100%;
+}
+
+.card {
+	height: 100%;
 }
 
 .card-img-top {
