@@ -6,68 +6,144 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     
-    <title>Chalochale travel app</title>
+    <title>Sign Up - Chalochale Travel</title>
 
      <script src="https://kit.fontawesome.com/c9da710483.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Navbar Start -->
     <div class="container">
-        <div class = "row">
+        <div class="row">
             <div class="col-md-12">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <i class="fa-regular fa-paper-plane"></i>Chalochale Travel</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto align-items-lg-center">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Buses
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#buses">All buses</a></li>
-                                <li><a class="dropdown-item" href="#bus-1">Bus 1</a></li>
-                                <li><a class="dropdown-item" href="#bus-2">Bus 2</a></li>
-                                <li><a class="dropdown-item" href="#bus-3">Bus 3</a></li>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand fw-bold" href="index.html">
+                            <i class="fa-solid fa-plane-departure"></i> Chalochale Travel
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="destination.html">Destination</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="packages.html">Packages</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
                             </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Features
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#booking">Easy booking</a></li>
-                                <li><a class="dropdown-item" href="#tracking">Live tracking</a></li>
-                                <li><a class="dropdown-item" href="#support">Travel support</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Pricing
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end">
-                                <li><a class="dropdown-item" href="#standard">Standard</a></li>
-                                <li><a class="dropdown-item" href="#premium">Premium</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#pricing">View all prices</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+                            <a href="login.html" class="btn btn-warning ms-lg-3">Login</a>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </div>
     </div>
+    <!-- Navbar End -->
 
+    <!-- Signup Section Start -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <div class="card shadow-sm">
+                        <div class="card-body p-5">
+                            <h2 class="card-title text-center mb-4">Create Account</h2>
+                            <p class="text-center text-muted mb-4">Join Chalochale Travel and start your journey</p>
+
+                            <form id="signupForm" method="POST">
+                                <!-- Full Name -->
+                                <div class="mb-3">
+                                    <label for="fullName" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                                </div>
+
+                                <!-- Phone Number -->
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number (optional)">
+                                </div>
+
+                                <!-- Password -->
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="password" name="password" placeholder="Create a password" required>
+                                    <small class="form-text text-muted">At least 8 characters with uppercase, lowercase, and numbers</small>
+                                </div>
+
+                                <!-- Confirm Password -->
+                                <div class="mb-3">
+                                    <label for="confirmPassword" class="form-label">Confirm Password</label>
+                                    <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+                                </div>
+
+                                <!-- Terms and Conditions -->
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="terms" name="terms" required>
+                                    <label class="form-check-label" for="terms">
+                                        I agree to the <a href="#" class="text-decoration-none">Terms and Conditions</a>
+                                    </label>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <button type="submit" class="btn btn-warning w-100 fw-bold mb-3">Sign Up</button>
+
+                                <!-- Login Link -->
+                                <p class="text-center">
+                                    Already have an account? <a href="login.html" class="text-decoration-none">Login here</a>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Signup Section End -->
+
+        <!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+<p class="mb-0">© 2026 ChaloChale Travel App </p>
+</footer>
+  </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     
+    <script>
+        // Basic form validation
+        document.getElementById('signupForm').addEventListener('submit', function(e) {
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (password !== confirmPassword) {
+                e.preventDefault();
+                alert('Passwords do not match!');
+                return false;
+            }
+
+            if (password.length < 8) {
+                e.preventDefault();
+                alert('Password must be at least 8 characters long!');
+                return false;
+            }
+
+            alert('Account created successfully! Welcome to Chalochale Travel.');
+        });
+    </script>
+    
+
+
 </body>
 </html>
